@@ -6,6 +6,7 @@ Data scrapping and REST apis
 
 You will get practice interacting with a REST API in order to collect data. You can read more about REST apis [here](https://github.com/CSC-326/Course/raw/master/Slides/RESTAPI_Frameworks.pptx).
 
+See also: https://github.com/espadrine/Solve-Data-In-Code/blob/master/misc/network.md
 
 ### 1. Get a token. 
 
