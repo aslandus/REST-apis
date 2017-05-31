@@ -44,7 +44,37 @@ function getYourRepos(userName)
 
 function listBranches(owner,repo)
 {
-	
+	GET "/repos/:" + owner + "/" + repo + "/branches"
+}
+
+function createRepo(repo)
+{
+	var repo = {
+		"name": name,
+		"description": "This is a repository",
+		"homepage": "https://github.com",
+		"private": false,
+		"has_issues": true,
+		"has_projects": true,
+		"has_wiki": true
+	};
+
+	var options = {
+		url: urlRoot + '/users/repos',
+		method: 'POST',
+		headers: {
+			"User-Agent": "EnableIssues",
+			"content-type": "application/json",
+			"Authorization": token
+		},
+		json: repo
+	};
+
+	// Send a http request to url and specify a callback that will be called upon
+	request(options, function(error, response, obj)
+	{
+		console.log( response + JSON.stringify(obj) );
+	}
 }
 
 
