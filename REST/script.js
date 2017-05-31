@@ -7,7 +7,7 @@ var parse = require('parse-link-header');
 ////// FILL IN THE BLANKS
 
 var token = "token " + "3995bccaff89b23d69a5dcb2c07d6c56dad3589e";
-var userId = "chrisparnin";
+var userId = "aslandus";
 
 var urlRoot = "https://api.github.com";
 // NCSU Enterprise endpoint:
